@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+ 
+<!-- Header Menu -->
+<header class="border-b border-black/15 py-1 sticky top-0 z-50 bg-white">
+    <nav class="max-w-[90vw] mx-auto flex justify-between items-center font-sans text-sm">
+        <img src="assets/carson-logo.png"
+            class="w-14 h-14">
+
+        <ul class="hidden md:flex gap-4 lg:gap-10">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#project"><li>Project</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+
+        <!-- Mobile Navigation -->
+        <svg id="ham-menu" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 md:hidden">
+            <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+        </svg>
+
+        <svg id="ham-close" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 hidden">
+            <path stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12" />
+        </svg>
+    </nav>
+
+    <!-- Dropdown Menu -->
+     <div id="dropdown" class="overflow-hidden max-h-0 transition-[max-height] duration-700 ease-in-out">
+        <ul class="flex flex-col px-5 gap-1 font-serif text-lg">    
+            <li class="border-b block border-black/15 py-3"><a href="#home">Home</a></li>
+            <li class="border-b block border-black/15 py-3"><a href="#about">About</a></li>
+            <li class="border-b block border-black/15 py-3"><a href="#project">Project</a></li>
+            <li class="py-3 block"><a href="#contact">Contact</a></li>
+       </ul>
+     </div>
+</header>
+
+<main>
+    <!-- First Page: Home-->
+    <section id="home" class="max-w-[85vw] pt-30 pb-72 mx-auto">
+        <div class="flex flex-col-reverse lg:flex-row justify-between items-center">
+            <div class="">
+                <h1 class="font-poppins max-w-[30vw] text-5xl pt-8 md:text-8xl"> Carson Roderick </h1>
+                <p class="text-1xl"> Frontend Developer and Coding Addiction <span class="block">Trying to make website using Tailwind</span></p>
+                <div class="flex gap-5 flex-row cursor-pointer">
+                    <button class="bg-blue-800 mt-5 py-3 text-white px-3 rounded-sm shadow-md transition duration-500 hover:-translate-y-1 backdrop-blur-2xl">See Project ↓</button>
+                    <button class="bg-emerald-800 mt-5 py-3 text-white px-3 rounded-sm shadow-md transition duration-500 hover:-translate-y-1 backdrop-blur-2xl">Contact Me</button>
+                </div>
+            </div>
+            <img src="assets/muka-carson.jpeg" class="w-85 pt-3 h-85 object-cover rounded-md shadow-md shadow-blue-600/40 transition duration-300 ease-in-out hover:scale-105">
+        </div>
+    </section>
+
+    <!-- Second Page: About-->
+    <section id="about" class="pt-40 pb-40 font-poppins border-t border-black/30">
+        <div class="max-w-[73vw] mx-auto flex items-center flex-col justify-between md:flex-row">
+            <img src="assets/muka-carson.jpeg" class="w-100 h-100 object-cover shadow-md shadow-blue-700/54 hover:">
+
+            <div class="flex flex-col">
+                <h1 class="text-5xl max-w-[40vw] pb-3 flex pt-4">Kode Bersih Website Responsive</h1>
+                <p class="text-xl max-w-[40vw] pb-5 sm:text-md">Saya Carson Roderick. Seorang Frontend Developer yang mencoba 
+                    mengetik kode yang bersih dan responsive
+                </p>
+                <p class="text-xl max-w-[40vw] sm:text-md">Saya berumur 14 Tahun, saya seorang pemula dalam UI/UX design
+                    dan masih memulai karier saya sebagai frontend developer
+                </p>
+
+                <h1 class="pt-4 text-md  text-black/40">SKILLS</h1>
+                <div class="flex flex-row gap-2 items-center">
+                    <img src="https://jhonathanalvino.my.id/assets/1.svg" class="w-9 h-9"> ·
+                    <img src="https://jhonathanalvino.my.id/assets/2.svg" class="w-9 h-9"> ·
+                    <img src="https://jhonathanalvino.my.id/assets/3.svg" class="w-9 h-9"> .
+                    <img src="https://jhonathanalvino.my.id/assets/4.svg" class="w-9 h-9"> .
+                    <img src="https://jhonathanalvino.my.id/assets/5.svg" class="w-9 h-9">
+                </div>
+                <p class="text-xl sm:text-md"> Responsive Design → UI/UX Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Page: Project-->
+    <section id="project" class="pt-20 font-poppins border-t border-black/30">
+        <div class="max-w-[90vw] mx-auto pb-20">
+            <h1 class="text-5xl"> Project Saya</h1>
+            <p class="text-xl max-w-[60vw]">Ini adalah list yang telah saya kerjakan ketika sebagai frontend developer</p>
+            
+            <div class="pt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
+                <div class="w-50 m-1 px-5 py-5 border-black border-2 rounded-sm text-md">
+                    <h1 class="font-bold">Vibe Coding Web</h1>
+                    <p class="pb-2">Here is the web that i vibe coded to!</p>
+                    <a href="https://cars-portofolio.vercel.app/" target="_blank" class="bg-blue-700 px-2 py-2 text-white rounded-sm">Visit Website</a>
+                </div>
+
+                 <div class="w-50 m-1 px-5 py-5 border-black border-2 rounded-sm text-md">
+                    <h1 class="font-bold">Normal Css Web</h1>
+                    <p class="pb-2">Here is the web that i've made using normal css!</p>
+                    <a href="https://.vercel.app/" target="_blank" class="bg-blue-700 px-2 py-2 text-white rounded-sm">Visit Website</a>
+                </div>
+
+                 <div class="w-50 m-1 px-5 py-5 border-black border-2 rounded-sm text-md">
+                    <h1 class="font-bold">Bad Web</h1>
+                    <p class="pb-2">Here is the web that's my first ever web!</p>
+                    <a href="https://port-car.vercel.app/" target="_blank" class="bg-blue-700 px-2 py-2 text-white rounded-sm">Visit Website</a>
+                </div>
+
+                <div class="w-50 m-1 px-5 py-5 border-black border-2 rounded-sm text-md">
+                    <h1 class="font-bold">RuangKarya Web</h1>
+                    <p class="pb-2">RuangKarya made using antigravity IDE by google!</p>
+                    <a href="https://ruangkarya-topaz.vercel.app" target="_blank" class="bg-blue-700 px-2 py-2 text-white rounded-sm">Visit Website</a>
+                </div>
+
+                 <div class="w-50 m-1 px-5 py-5 border-black border-2 rounded-sm text-md">
+                    <h1 class="font-bold">Jerich Web</h1>
+                    <p class="pb-2">Here is the web that my friends made!</p>
+                    <a href="https://jerich.netlify.app/" target="_blank" class="bg-blue-700 px-2 py-2 text-white rounded-sm">Visit Website</a>
+                </div>
+
+                 <div class="w-50 m-1 px-5 py-5 bg-yellow-400 border-black border-2 rounded-sm text-md">
+                    <h1 class="font-bold">My Inspiration!</h1>
+                    <p class="pb-2">This is jhonatan alvino, my inspiration website!</p>
+                    <a href="https://jhonathanalvino.my.id/" target="_blank" class="bg-blue-700 px-2 py-2 text-white rounded-sm">Visit Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="pt-20 font-poppins border-t border-black/30">
+        <div class="max-w-[85vw] mx-auto pb-20">
+            <h1 class="text-4xl"> Contact Me </h1>
+            <p class="text-xl">Ini adalah List Contact dari Carson Roderick!</p>
+
+            <div class="pt-5">
+                <a href="https://github.com/carsonroderick" target="_blank">
+                    <img src="https://jhonathanalvino.my.id/assets/5.svg" class="w-16 h-16">
+                    <h1 class="font-bold"> Github </h1>
+                    <p> All Repositeries</p>
+                </a>
+
+            <div class="pt-5">
+                <a href="https://wa.me/083157340571/">
+                    <img src="https://img.magnific.com/premium-vector/vector-whatsapp-social-media-logo_1093524-447.jpg?semt=ais_hybrid&w=740&q=80" class="w-16 h-16">
+                    <h1 class="font-bold"> Whatsapp </h1>
+                    <p> Whatsapp Contact </p>
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
